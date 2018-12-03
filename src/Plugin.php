@@ -1,13 +1,9 @@
 <?php
-
 namespace Deprecations;
 
 use Composer\Composer;
 use Composer\IO\IOInterface;
 use Composer\Plugin\PluginInterface;
-/*use Composer\EventDispatcher;*/
-/*use Composer\Installer;*/
-/*use Composer\Plugin\Capability\CommandProvider as CommandProviderCapability;*/
 use Composer\Plugin\Capable;
 
 class Plugin implements PluginInterface, Capable
