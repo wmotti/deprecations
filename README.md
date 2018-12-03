@@ -1,7 +1,16 @@
-Default filename for the specification file is ```deprecated_packages.json```, but custom specification file can be used: ```composer deprecations -f custom_deprecations.json```
+## Installation
 
-Specification file example:
+##### local
+```composer require wmotti/deprecations```
 
+##### global
+```composer global require wmotti/deprecations```
+
+## Specification file
+##### filename
+Default filename is ```deprecated_packages.json```, but custom specification file can be used: ```composer deprecations -f custom_deprecations.json```
+
+##### example
 ```json
 {
     "packages": [
