@@ -21,8 +21,8 @@ Default filename is ```deprecated_packages.json```, but custom specification fil
                     "version": "<composer version constraint>",
                     "reason": "blah blah blah",
                     "resources": [
-                        "<explanatory_blog_page_url>"
-                        "<github_issue_url>",
+                        "<explanatory_blog_page_url>",
+                        "<github_issue_url>"
                     ]
                 }
             ]
