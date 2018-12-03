@@ -9,7 +9,14 @@ class DeprecationsCollection implements \IteratorAggregate
         foreach($packages as $package)
         {
             foreach ($package['deprecations'] as $deprecation)
-                $collection[] = new Deprecation($package['name'], $deprecation['version'], $deprecation['reason'], $deprecation['resources']);
+                $name = $package['name'];
+                $version = $deprecation['version'];
+                $deprecation = new Deprecation($package['name'], $deprecation['version'], $deprecation['reason'], $deprecation['resources']);
+                if (array_key_exists('reason', $deprecation) && !empty($deprecation['reason']))
+                    $deprecation->setReason($deprecation['reason']);
+                if (array_key_exists('resources', $deprecation) && !empty($deprecation['resources']))
+                    $deprecation->setResources($deprecation['resources']);
+                $collection[] = $deprecation;
         }
         $this->collection = $collection;
     }
