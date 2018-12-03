@@ -1,0 +1,32 @@
+{
+    "name": "wmotti/deprecations",
+    "description": "Check a version against a constraint",
+    "type": "composer-plugin",
+    "require": {
+        "composer-plugin-api": "^1.1"
+    },
+    "homepage": "https://github.com/wmotti/deprecations",
+    "license": "GPL-3.0-or-later",
+    "keywords": [
+        "package",
+        "dependency",
+       "deprecation"
+    ],
+    "authors": [
+        {
+            "name": "Walter Mottinelli",
+            "email": "wmotti@gmail.com"
+        }
+    ],
+    "extra": {
+        "class": "Deprecations\\Plugin"
+    },
+    "autoload": {
+        "psr-4": {
+            "Deprecations\\": "src"
+        }
+    },
+    "support": {
+        "issues": "https://github.com/composer/composer/issues"
+    }
+}
